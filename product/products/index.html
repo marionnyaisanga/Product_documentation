@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mosaic Overview</title>
+  <style>
+    /* Reset default */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    /* Make html and body full height/width */
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 40px 20px;
+      box-sizing: border-box;
+
+      /* Full viewport */
+      min-height: 100vh;
+      min-width: 100vw;
+
+      /* Flexbox centering */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      max-width: none; /* remove max width restriction */
+      width: 90vw;
+      height: 90vh;
+      overflow-y: auto; /* scroll if content overflows */
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.07);
+      box-sizing: border-box;
+    }
+
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 24px;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 16px;
+      color: #34495e;
+      font-weight: 600;
+      font-size: 1.6rem;
+      border-bottom: 3px solid #2c3e50;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 12px;
+      color: #34495e;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+      margin-bottom: 14px;
+      color: #555;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    ul li, ol li {
+      margin-bottom: 8px;
+    }
+
+    /* Changed line color here */
+    hr {
+      border: none;
+      border-top: 1px solid #2c3e50;
+      margin: 30px 0;
+    }
+
+    .built-with {
+      font-style: italic;
+      color: #666;
+      margin-top: 32px;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    .image-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Responsive */
+    @media(max-width: 600px) {
+      .container {
+        padding: 20px 20px;
+        width: 95vw;
+        height: 95vh;
+      }
+      h1 {
+        font-size: 1.9rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+      h3 {
+        font-size: 1.1rem;
+      }
+      p, li {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-label="Mosaic Platform Overview">
+    <h1>MOSAIC Overview</h1>
+
+    <p>The global fashion industry produces <strong>10%</strong> of worldwide pollution, with unsustainable textile practices as a leading cause. In Kenya, the <strong>Gikomba market</strong> is the heart of the second-hand clothing (Mitumba) ecosystem, providing economic opportunity and affordable clothing. However, used and discarded clothing continues to feed landfills like <strong>Dandora</strong>, increasing the environmental burden.</p>
+
+    <p>Our platform addresses this gap by connecting traders with designers for garment upcycling, aiming to turn waste into value and foster sustainable habits in the local fashion market. Through Mosaic, traders are able to renew their unsold clothes while designers use their talent to come up with unique designs.</p>
+
+  
+
+    <h2>How it Works</h2>
+
+    <h3>Traders</h3>
+    <ol>
+      <li>Sign up to the App</li>
+      <li>Browse through the designs catalogue and pick out a design of their preference based on the unsold clothes materials that they have</li>
+      <li>Add the item to the cart</li>
+      <li>Finish the checkout process by picking the delivery method</li>
+      <li>Deliver their unsold clothes and wait for delivery</li>
+      <li>Pay for the new design upon delivery</li>
+    </ol>
+
+    <h3>Designers</h3>
+    <ol>
+      <li>Sign up</li>
+      <li>Navigate to the uploads page</li>
+      <li>Upload your designs by either browsing your gallery or taking a photo</li>
+      <li>Click upload!</li>
+    </ol>
+
+    <div class="built-with">
+      <p><strong>Built with:</strong> Mosaic is built with a combination of HTML, CSS, Javascript, and Backend technologies.</p>
+    </div>
+
+    <div class="image-container" aria-label="Sample interfaces of Mosaic mobile app">
+      <!-- Replace src with your real image path -->
+      <img src="../images/mosaicinterface.png" alt="Screenshot of Mosaic platform user interfaces" />
+    </div>
+
+    <a href="resources.html">Our Resources</a> | <a href="TermsAndConditions.html">See Our Terms and Conditions</a>
+  </main>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mosaic - Frequently Asked Questions</title>
+  <style>
+    /* Reset some default spacing */
+    body, h1, h2, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* New: Make html and body full height */
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+      padding: 40px 20px;
+      box-sizing: border-box;
+
+      /* Full viewport */
+      min-height: 100vh;
+      min-width: 100vw;
+
+      /* Flex to center container */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      max-width: none; /* Remove max width restriction */
+      width: 90vw;
+      height: 90vh;
+      overflow-y: auto; /* Scroll if content is too tall */
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #4A90E2;
+      text-align: center;
+      border-bottom: 3px solid #4A90E2;
+      padding-bottom: 8px;
+    }
+
+    .faq-item {
+      margin-bottom: 24px;
+    }
+
+    .faq-question {
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+
+    .faq-answer {
+      color: #555;
+      font-size: 1rem;
+      white-space: pre-wrap; /* preserve line breaks */
+    }
+
+    .external-link {
+      margin-top: 32px;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .external-link a {
+      color: #4A90E2;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .external-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 20px 25px;
+        width: 95vw;
+        height: 95vh;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      .faq-question {
+        font-size: 1rem;
+      }
+      .faq-answer {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <div class="faq-question"><strong>QST: Who can use the platform?</strong></div>
+      <div class="faq-answer">
+        Mosaic is a platform that connects traders with unsold clothes to designers who redesign the clothes for them. Our mission is to reduce textile waste, support sustainable fashion and promote local talent.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"><strong>QST: Who can use the platform?</strong></div>
+      <div class="faq-answer">
+        Local traders and designers are directly involved in second-hand clothing upcycling.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"><strong>QST: How do I submit an upcycling request?</strong></div>
+      <div class="faq-answer">
+        Register as a trader, browse the designer catalog, to pick out a design you are interested in. And then submit a request through your dashboard.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"><strong>QST: Why can’t I find a certain designer?</strong></div>
+      <div class="faq-answer">
+        Designers with 10+ pending orders are temporarily hidden to maintain quality.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"><strong>QST: What if my order is late?</strong></div>
+      <div class="faq-answer">
+        Check status in-app or contact support.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"><strong>QST: How fast will I get my upcycled item?</strong></div>
+      <div class="faq-answer">
+        All orders are guaranteed to be completed within a maximum of 14 days.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"><strong>QST: Who do I contact for help?</strong></div>
+      <div class="faq-answer">
+        Reach out to us through our “Contact us” page or email us at <a href="mailto:mosaic@info.com">mosaic@info.com</a>. We respond within 24 hours.
+      </div>
+    </div>
+
+    <div class="external-link">
+      For more information check out: <a href="https://alpha-mosaic.netlify.app/" target="_blank" rel="noopener noreferrer">https://alpha-mosaic.netlify.app/</a>
+    </div>
+  </div>
+</body>
+</html>
