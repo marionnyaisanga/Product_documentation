@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mosaic - References and Resources</title>
+  <style>
+    /* Reset defaults */
+    body, h1, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+      box-sizing: border-box;
+
+      /* Flexbox centering */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      min-height: 100vh;
+      min-width: 100vw;
+
+      padding: 40px 20px;
+    }
+
+    .container {
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      width: 90vw;
+      height: 90vh; /* full height with scroll if needed */
+      padding: 30px 40px;
+      border-radius: 8px;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 24px;
+      color: #4A90E2;
+      border-bottom: 3px solid #2c3e50; /* dark slate for line color */
+      padding-bottom: 8px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 16px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    a {
+      color: #4A90E2;
+      text-decoration: underline; /* underline by default */
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    a:hover,
+    a:focus {
+      color: #2b70d9;
+      outline: none;
+      text-decoration: underline;
+    }
+
+    /* Optional scrollbar for overflow */
+    .container::-webkit-scrollbar {
+      width: 8px;
+    }
+    .container::-webkit-scrollbar-thumb {
+      background: rgba(74,144,226, 0.5);
+      border-radius: 4px;
+    }
+    .container::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .container {
+        padding: 20px 20px;
+        width: 95vw;
+        height: 95vh;
+      }
+      h1 {
+        font-size: 1.6rem;
+        margin-bottom: 16px;
+      }
+      li {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-label="References and Resources for Mosaic project">
+    <h1>References and Resources</h1>
+    <ul>
+      <li>
+        <a href="https://www.figma.com/design/oNlasvNwTuR5pDpmsiRiaq/Drawings?t=5KPd99StUEBCEDrk-0" target="_blank" rel="noopener noreferrer">
+          Customer Journey Map (Figma)
+        </a>
+      </li>
+      <li>
+        <a href="https://lucid.app/lucidchart/325279db-449b-44ea-a8f7-8b98c7abb5fd/edit?invitationId=inv_0bd2bae6-7bbe-4041-a48f-e22e8ac064d6&page=0_0#" target="_blank" rel="noopener noreferrer">
+          System Architecture (Lucidchart)
+        </a>
+      </li>
+      <li>
+        <a href="https://docs.google.com/document/d/14gC0wxV2zlR1fbL5eXBibNYT9I1VL2i12JAajYvY6ok/edit?tab=t.0#heading=h.n5uyetjtcutq" target="_blank" rel="noopener noreferrer">
+          ERD Document (Google Docs)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.figma.com/design/qIefzmGqsUOeIlGZ4sUGnk/Mosaic-interfaces?t=u9MITjdWHu65CN51-0" target="_blank" rel="noopener noreferrer">
+          Product Mockups (Figma)
+        </a>
+      </li>
+      <li>
+        <a href="https://alpha-mosaic.netlify.app/" target="_blank" rel="noopener noreferrer">
+          Informational Website
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
